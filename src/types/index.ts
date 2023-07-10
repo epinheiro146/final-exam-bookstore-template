@@ -20,6 +20,10 @@ export interface Book {
     _created?: string | Date;
 };
 
+export interface BookWCatName extends Book {
+    categoryname: Category['name'];
+};
+
 export interface MysqlResponse {
     affectedRows: number;
     insertId: number;
